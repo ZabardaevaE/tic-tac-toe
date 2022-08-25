@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tic-tac-toe</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
     <main class="background">
         <section class="title">
             <h1>Tic Tac Toe</h1>
             <hr>
-        </section>
-        
-
         </section>
         <section class="field">
             <div class="box"></div>
@@ -28,97 +26,14 @@
             <div class="box"></div>
         </section>
         <br></br>
-        
         <section class="message-board"></section>
         <br></br>
         <section class="controlling">
             <button class="reset">Reset</button>
         </section>
-        
-
     </main>
-    <script>
-        document.querySelector(".message-board")
-        gameActive = true
-        var boxes = document.querySelector(".field");
-           
-        var counter = 1
-boxes.addEventListener('click', function (event) {
-    let box = event.target
-    console.log(gameActive)
-     if (gameActive === true) { 
-        if (box.tagName === "DIV" && box.textContent === "") {   
-            box.style.backgroundColor = 'red';
-            if (counter%2 === 1) {
-                box.textContent = "X"
-                counter = counter + 1
-            } else if (counter%2 === 0) {
-                box.textContent = "O"
-                counter = counter + 1
-            }
-        }
-      
-        
-    // //var winConditions = [[0], [1],[2]]    
-    // if (boxes.children[0].textContent === "X" && boxes.children[1].textContent === "X" && boxes.children[2].textContent === "X") {
-    //     boxes.children[0].style.backgroundColor = 'green' 
-    //     boxes.children[1].style.backgroundColor = 'green'
-    //     boxes.children[2].style.backgroundColor = 'green'
-
-    // } else if (boxes.children[2].textContent === "X" && boxes.children[4].textContent === "X" && boxes.children[6].textContent === "X") {
-    //     boxes.children[2].style.backgroundColor = 'green' 
-    //     boxes.children[4].style.backgroundColor = 'green'
-    //     boxes.children[6].style.backgroundColor = 'green'
-    // } 
-    var winConditions = [[[0], [1], [2]],[[3],[4], [5]], [[6], [7], [8]], [[0], [3], [6]], [[1], [4], [7]], [[2], [5], [8]], [[0], [4], [8]], [[2], [4], [6]]]
-    
-
+    <script type="text/javascript" src="./script.js"></script>
     
     
-    for (let i = 0; i < 8; ++i) {
-        // console.log(counter)
-            if ((boxes.children[winConditions[i][0][0]].textContent === "X" 
-            && boxes.children[winConditions[i][1][0]].textContent === "X"
-            && boxes.children[winConditions[i][2][0]].textContent === "X") 
-            || (boxes.children[winConditions[i][0][0]].textContent === "O" 
-            && boxes.children[winConditions[i][1][0]].textContent === "O"
-            && boxes.children[winConditions[i][2][0]].textContent === "O") ){
-                boxes.children[winConditions[i][0][0]].style.backgroundColor = 'green'
-
-                boxes.children[winConditions[i][1][0]].style.backgroundColor = 'green'
-
-                boxes.children[winConditions[i][2][0]].style.backgroundColor = 'green'
-                gameActive= false
-                console.log(box.textContent)
-                document.querySelector(".message-board").textContent = "Player " + box.textContent + " win!"
-
-            }  else if  (counter > 9) {
-            console.log("draw")
-            document.querySelector(".message-board").textContent = "It is a draw!"
-            }      
-        }
-    }  
-})
-var restartButton = document.querySelector(".reset")
-restartButton.addEventListener("click", function(event){
-    console.log("meow")
-    box.style.backgroundColor = 'transparent';
-    box.textContent = ""
-    box.textContent = ""
-    boxes
-    boxes.children[winConditions[i][0][0]].style.backgroundColor = 'transparent'
-
-                boxes.children[winConditions[i][1][0]].style.backgroundColor = 'transparent'
-
-                boxes.children[winConditions[i][2][0]].style.backgroundColor = 'transparent'
-                counter = 0
-                document.querySelector(".message-board").textContent = ""
-})
-
-
-     
-
-
-    </script>
 </body>
 </html>
