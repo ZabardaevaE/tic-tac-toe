@@ -9,8 +9,7 @@ Tic Tac Toe.  My first JavaScript project.
 ## :page_facing_up: About
 - Tic Tac Toe is a game for two players. 
 - Fisrt player to start is "X" player.
-
-- Add in-app screenshots.
+- The winner's combination changes color to green
 
 ## :pencil2: Planning & Problem Solving
 - Here is my planning process
@@ -18,15 +17,14 @@ Tic Tac Toe.  My first JavaScript project.
 
 ## :rocket: Cool tech
 - Programming languages I use were:
- HTML + CSS
+ HTML + CSS;
  JavaScript
 
-
 ## :scream: Bugs to fix :poop:
-- The reset function required more work as it is only delete information but do not restart the game.
+- The reset function required more work as it is only delete information but do not restart the game. Restart button is working propely now!
 
 ## :sob: Lessons learnt
-- I require better time management to finish the project
+- I require better time management to finish the project and more practice.
 
 ## :white_check_mark: Future features
 - I could add reload function and some animation
