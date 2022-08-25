@@ -51,6 +51,12 @@ hr {
     align-items: center;
     font-size: 40px;
 }
-.reset {
 
+
+.message-board {
+      
+    width: 200px;
+    height: 30px;
+    color: tomato;
+    text-align: center;
 }

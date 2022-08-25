@@ -27,13 +27,15 @@
             <div class="box"></div>
             <div class="box"></div>
         </section>
-        <section class="winner announcer"></section>
+        <section class="message-board"></section>
         <section class="controlling">
             <button class="reset">Reset</button>
         </section>
+        
 
     </main>
     <script>
+        document.querySelector(".message-board")
         gameActive = true
         var boxes = document.querySelector(".field");
            
@@ -84,8 +86,12 @@ boxes.addEventListener('click', function (event) {
 
                 boxes.children[winConditions[i][2][0]].style.backgroundColor = 'green'
                 gameActive= false
+                console.log(box.textContent)
+                document.querySelector(".message-board").textContent = "Player " + box.textContent + " win!"
+
             }  else if  (counter > 9) {
             console.log("draw")
+            document.querySelector(".message-board").textContent = "It is a draw!"
             }      
         }
     }  
