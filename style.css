@@ -18,7 +18,9 @@ hr {
     width: 300px;
     height: 3px;
     background-color: blanchedalmond;
-    ;
+    text-align: center;
+    
+
 }
 .display-turns {
     color: teal;
