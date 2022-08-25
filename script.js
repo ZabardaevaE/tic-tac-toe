@@ -30,7 +30,7 @@ document.querySelector(".message-board")
                         boxes.children[winConditions[i][2][0]].style.backgroundColor = '#AFE313'
                         gameActive= false
                         console.log(box.textContent)
-                        document.querySelector(".message-board").textContent = "Player " + box.textContent + " win!"
+                        document.querySelector(".message-board").textContent = "Player " + box.textContent + " wins!"
                 }  else if  (counter > 9) {
                     console.log("draw")
                     document.querySelector(".message-board").textContent = "It is a draw!"
@@ -63,10 +63,10 @@ var restartButton = document.querySelector(".reset")
         boxes.children[7].style.backgroundColor = "rgb(178, 203, 208)"
         boxes.children[8].style.backgroundColor = "rgb(178, 203, 208)"  
         document.querySelector(".message-board")
-        // gameActive = true
+        gameActive = true
         // var boxes = document.querySelector(".field");
            
-        // var counter = 1
+        counter = 1
         
     })        
 
